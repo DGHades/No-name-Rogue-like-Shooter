@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1383548967837930453}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &385210282417167147
 SpriteRenderer:
@@ -643,7 +643,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1383548967837930453}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!212 &2541504239593214305
 SpriteRenderer:
@@ -1177,6 +1177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1383548967837930453}
   - component: {fileID: 4867023325275792635}
+  - component: {fileID: 6491659928807526151}
   m_Layer: 0
   m_Name: BaseCrossTile
   m_TagString: Untagged
@@ -1210,8 +1211,8 @@ Transform:
   - {fileID: 1622649085844272391}
   - {fileID: 5335083487245685743}
   - {fileID: 2988403669052928188}
-  - {fileID: 9104796391584227789}
   - {fileID: 6361064003396250503}
+  - {fileID: 9104796391584227789}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1267,6 +1268,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6491659928807526151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262444756071325098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f57a019988bfb0e4ba92ecafbbaf6c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallTopLeft: {fileID: 7917699726806872761}
+  wallTopRight: {fileID: 1481884880562242944}
+  wallBottomLeft: {fileID: 4852715487175983864}
+  wallBottomRight: {fileID: 1166209332910214413}
+  blockingWallLeft: {fileID: 8083436142424957163}
+  blockingWallRight: {fileID: 4185575501145894546}
+  blockingWallTop: {fileID: 2750417942697200617}
+  blockingWallBottom: {fileID: 4155827306406946339}
+  gateLeft: {fileID: 4546603318479442489}
+  gateRight: {fileID: 6659188628660367722}
+  gateTop: {fileID: 3266740895729691217}
+  gateBottom: {fileID: 813037856412033051}
 --- !u!1 &6649377597423594484
 GameObject:
   m_ObjectHideFlags: 0
