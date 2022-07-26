@@ -17,6 +17,10 @@ public class BaseTile : MonoBehaviour
     public GameObject gateRight;
     public GameObject gateTop;
     public GameObject gateBottom;
+    public GameObject borderLeft;
+    public GameObject borderRight;
+    public GameObject borderTop;
+    public GameObject borderBottom;
 
     private bool hasGate = false;
     private bool hasBlockingWall = false;
@@ -43,5 +47,40 @@ public class BaseTile : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SetBorders(string side) 
+    {
+        if (side == "Top")
+        {
+            Destroy(borderBottom);
+            Destroy(borderLeft);
+            Destroy(borderRight);
+        }
+        if (side == "Bottom")
+        {
+            Destroy(borderTop);
+            Destroy(borderLeft);
+            Destroy(borderRight);
+        }
+        if (side == "Left")
+        {
+            Destroy(borderBottom);
+            Destroy(borderTop);
+            Destroy(borderRight);
+        }
+        if (side == "Right")
+        {
+            Destroy(borderBottom);
+            Destroy(borderTop);
+            Destroy(borderLeft);
+        }
+        if (side == "None")
+        {
+            Destroy(borderRight);
+            Destroy(borderBottom);
+            Destroy(borderTop);
+            Destroy(borderLeft);
+        }
     }
 }
