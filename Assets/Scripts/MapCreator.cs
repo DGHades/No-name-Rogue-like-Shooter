@@ -7,6 +7,8 @@ public class MapCreator : MonoBehaviour
     public GameObject mapTilePosDefiner;
     public int mapWidth = 64;
     public int mapHeight = 64;
+    public GameObject baseTile;
+    private GameObject[] posDefiners;
 
     private int x, y, z = 0;
     // Start is called before the first frame update
@@ -23,11 +25,22 @@ public class MapCreator : MonoBehaviour
             x = 0;
             y -= 20;
         }
+
+        PlaceTiles();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void PlaceTiles() 
+    {
+        posDefiners = GameObject.FindGameObjectsWithTag("PosDefiner");
+        foreach (GameObject definer in posDefiners)
+        {
+            Instantiate(baseTile, definer.transform.position, Quaternion.identity);
+        }
     }
 }
