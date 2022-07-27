@@ -54,26 +54,47 @@ public class MapCreator : MonoBehaviour
     {
         foreach (GameObject tile in tiles)
         {
-            if (tile.transform.position.x == 0)
+            if (tile.transform.position.x == 0 && tile.transform.position.y == 0)
             {
-                tile.GetComponent<BaseTile>().SetBorders("Left");
+                tile.GetComponent<BaseTile>().SetBorders("TopLeft");
             }
-            else if (tile.transform.position.y == (mapHeight-1) * -20)
+            else if (tile.transform.position.x == 0 && tile.transform.position.y == (mapHeight - 1) * -20)
             {
-                tile.GetComponent<BaseTile>().SetBorders("Bottom");
+                tile.GetComponent<BaseTile>().SetBorders("BottomLeft");
             }
-            else if (tile.transform.position.x == (mapWidth-1) * 20)
+            else if (tile.transform.position.x == (mapWidth - 1) * 20 && tile.transform.position.y == 0)
             {
-                tile.GetComponent<BaseTile>().SetBorders("Right");
+                tile.GetComponent<BaseTile>().SetBorders("TopRight");
             }
-            else if (tile.transform.position.y == 0)
+            else if (tile.transform.position.x == (mapWidth - 1) * 20 && tile.transform.position.y == (mapHeight - 1) * -20)
             {
-                tile.GetComponent<BaseTile>().SetBorders("Top");
+                tile.GetComponent<BaseTile>().SetBorders("BottomRight");
             }
             else
             {
-                tile.GetComponent<BaseTile>().SetBorders("None");
+                if (tile.transform.position.x == 0)
+                {
+                    tile.GetComponent<BaseTile>().SetBorders("Left");
+                }
+                else if (tile.transform.position.y == (mapHeight - 1) * -20)
+                {
+                    tile.GetComponent<BaseTile>().SetBorders("Bottom");
+                }
+                else if (tile.transform.position.x == (mapWidth - 1) * 20)
+                {
+                    tile.GetComponent<BaseTile>().SetBorders("Right");
+                }
+                else if (tile.transform.position.y == 0)
+                {
+                    tile.GetComponent<BaseTile>().SetBorders("Top");
+                }
+                else
+                {
+                    tile.GetComponent<BaseTile>().SetBorders("None");
+                }
             }
+
+            
         }
     }
 }

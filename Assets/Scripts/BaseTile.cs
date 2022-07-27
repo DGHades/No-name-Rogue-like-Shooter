@@ -51,6 +51,26 @@ public class BaseTile : MonoBehaviour
 
     public void SetBorders(string side) 
     {
+        if (side == "TopLeft")
+        {
+            Destroy(borderBottom);
+            Destroy(borderRight);
+        }
+        if (side == "TopRight")
+        {
+            Destroy(borderBottom);
+            Destroy(borderLeft);
+        }
+        if (side == "BottomLeft")
+        {
+            Destroy(borderTop);
+            Destroy(borderRight);
+        }
+        if (side == "BottomRight")
+        {
+            Destroy(borderTop);
+            Destroy(borderLeft);
+        }
         if (side == "Top")
         {
             Destroy(borderBottom);
