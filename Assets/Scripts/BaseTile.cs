@@ -23,7 +23,7 @@ public class BaseTile : MonoBehaviour
     public GameObject borderBottom;
 
     private bool hasGate = false;
-    private bool hasBlockingWall = false;
+    private bool hasBlockingWall = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -101,6 +101,26 @@ public class BaseTile : MonoBehaviour
             Destroy(borderBottom);
             Destroy(borderTop);
             Destroy(borderLeft);
+        }
+    }
+
+    public void SetBlockingWalls(int blockingWallToDel) 
+    {
+        if (blockingWallToDel == 1)
+        {
+            Destroy(blockingWallBottom);
+        }
+        else if (blockingWallToDel == 2)
+        {
+            Destroy(blockingWallTop);
+        }
+        else if (blockingWallToDel == 3)
+        {
+            Destroy(blockingWallRight);
+        }
+        else if (blockingWallToDel == 4)
+        {
+            Destroy(blockingWallLeft);
         }
     }
 }

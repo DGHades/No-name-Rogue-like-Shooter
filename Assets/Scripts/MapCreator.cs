@@ -32,6 +32,7 @@ public class MapCreator : MonoBehaviour
         
         PlaceTiles();
         CheckBorders();
+        CreateWalls();
     }
 
     // Update is called once per frame
@@ -96,5 +97,46 @@ public class MapCreator : MonoBehaviour
 
             
         }
+    }
+
+    public void CreateWalls() 
+    {
+        foreach (GameObject tile in tiles)
+        {
+            int blockingWallToDel = 0;
+            int wallCount = RandomOneToFour();
+            for (int i = 0; i < wallCount; i++)
+            {
+                blockingWallToDel = RandomOneToFourOnce(blockingWallToDel);
+                tile.GetComponent<BaseTile>().SetBlockingWalls(blockingWallToDel);
+            }
+
+        }
+    }
+
+    public int RandomOneToFour()
+    {
+        int randomNum = 0;
+        randomNum = Random.Range(1, 4);
+
+
+        return randomNum;
+    }
+    public int RandomOneToFourOnce(int numBefore) 
+    {
+        int randomNum;
+        if (numBefore == 0)
+        {
+            randomNum = Random.Range(1, 4);
+        }
+        else
+        {
+            do
+            {
+                randomNum = Random.Range(1, 4);
+            } while (randomNum == numBefore);
+        }
+        return randomNum;
+        
     }
 }
