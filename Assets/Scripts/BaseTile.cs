@@ -22,6 +22,10 @@ public class BaseTile : MonoBehaviour
     public GameObject borderTop;
     public GameObject borderBottom;
 
+    public GameObject TileTop;
+    public GameObject TileBottom;
+    public GameObject TileLeft;
+    public GameObject TileRight;
     private bool hasGate = false;
     private bool hasBlockingWall = true;
     // Start is called before the first frame update
@@ -48,7 +52,46 @@ public class BaseTile : MonoBehaviour
     {
         
     }
+    private void FindNeighbourTiles() 
+    {
+        RaycastHit2D hit;
+        if (Physics2D.Raycast(transform.position, transform.position.x))
+        {
 
+        }
+    
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (TileTop == null || TileBottom == null || TileLeft == null || TileRight == null)
+        {
+            if (collision.gameObject.transform.position.x < gameObject.transform.position.x)
+            {
+                //Left
+                TileLeft = collision.gameObject;
+            }
+            else if (collision.gameObject.transform.position.x > gameObject.transform.position.x)
+            {
+                //Right
+                TileRight = collision.gameObject;
+            }
+            else if (collision.gameObject.transform.position.y < gameObject.transform.position.y)
+            {
+                //Bot
+                TileBottom = collision.gameObject;
+            }
+            else if (collision.gameObject.transform.position.y > gameObject.transform.position.y)
+            {
+                //Top
+                TileTop = collision.gameObject;
+            }
+        }
+       /* else
+        {
+            Destroy(gameObject.GetComponent<Collider2D>());
+        } */
+        
+    }
     public void SetBorders(string side) 
     {
         if (side == "TopLeft")

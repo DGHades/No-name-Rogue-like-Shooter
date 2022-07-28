@@ -1400,6 +1400,7 @@ GameObject:
   - component: {fileID: 1383548967837930453}
   - component: {fileID: 4867023325275792635}
   - component: {fileID: 6491659928807526151}
+  - component: {fileID: 8813858911478324346}
   m_Layer: 0
   m_Name: BaseCrossTile
   m_TagString: Untagged
@@ -1522,6 +1523,43 @@ MonoBehaviour:
   borderRight: {fileID: 134227187190938535}
   borderTop: {fileID: 1703912494977366361}
   borderBottom: {fileID: 6272403328381454113}
+  TileTop: {fileID: 0}
+  TileBottom: {fileID: 0}
+  TileLeft: {fileID: 0}
+  TileRight: {fileID: 0}
+--- !u!60 &8813858911478324346
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262444756071325098}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.002393222, y: 0.9956733}
+      - {x: -0.5, y: 0.5}
+      - {x: -1.0082753, y: -0.0015124318}
+      - {x: -0.5, y: -0.5}
+      - {x: 0.002393222, y: -0.9956733}
+      - {x: 0.5, y: -0.5}
+      - {x: 0.9967483, y: -0.0026752949}
+      - {x: 0.5, y: 0.5}
 --- !u!1 &6272403328381454113
 GameObject:
   m_ObjectHideFlags: 0
