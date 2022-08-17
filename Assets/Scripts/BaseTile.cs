@@ -55,10 +55,10 @@ public class BaseTile : MonoBehaviour
     private void FindNeighbourTiles() 
     {
         RaycastHit2D hit;
-        if (Physics2D.Raycast(transform.position, transform.position.x))
-        {
+        //if (Physics2D.Raycast(transform.position, transform.position.x))
+        //{
 
-        }
+        //}
     
     }
     private void OnTriggerEnter2D(Collider2D collision)
