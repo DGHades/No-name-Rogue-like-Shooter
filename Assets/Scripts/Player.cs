@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject Crosshair;
     void Start()
     {
         
@@ -29,5 +30,8 @@ public class Player : MonoBehaviour
         {
             gameObject.transform.Translate(Vector3.right * 0.1f);
         }
+
+        Vector2 mousePosition = Input.mousePosition;
+        Crosshair.transform.position = mousePosition;
     }
 }
