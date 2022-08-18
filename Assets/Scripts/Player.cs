@@ -6,6 +6,9 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject Crosshair;
+    public GameObject PlayerOptic;
+    public LineRenderer AimLine;
+    private Vector3 LineStartPos,LineEndPos;
     void Start()
     {
         
@@ -30,8 +33,22 @@ public class Player : MonoBehaviour
         {
             gameObject.transform.Translate(Vector3.right * 0.1f);
         }
-
+        MoveCrosshair();
+        DrawAimLine();
+    }
+    void DrawAimLine()
+    {
+        AimLine.gameObject.SetActive(true);
+        Vector3 LineStartPos = transform.position;
+        Vector3 LineEndPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        AimLine.SetVertexCount(2);
+        AimLine.SetPosition(0, LineStartPos);
+        AimLine.SetPosition(1, LineEndPos);
+    }
+    void MoveCrosshair() 
+    {
         Vector2 mousePosition = Input.mousePosition;
         Crosshair.transform.position = mousePosition;
+        PlayerOptic.transform.rotation = Quaternion.LookRotation(Vector3.forward, Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position);
     }
 }
