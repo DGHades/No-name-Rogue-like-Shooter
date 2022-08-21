@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerShoot : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
-    public GameObject shootingPoint;
-    public GameObject Bullet;
 
     // Start is called before the first frame update
     void Start()
@@ -16,9 +14,9 @@ public class PlayerShoot : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Mouse0))
-        {
-            Instantiate(Bullet,transform.position,transform.rotation);
-        }
+        Vector2 v = GetComponent<Rigidbody2D>().velocity;
+        v = v.normalized;
+        v *= 10;
+        GetComponent<Rigidbody2D>().velocity = v;
     }
 }
