@@ -209,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 348228228}
   - component: {fileID: 348228229}
+  - component: {fileID: 348228230}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -283,6 +284,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &348228230
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348228227}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0.0078125, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.32059783, y: 0.031610385}
+      - {x: 0.013464977, y: 0.50166893}
+      - {x: -0.31810093, y: 0.027315766}
+      - {x: -0.3229418, y: 0.4978407}
+      - {x: -0.49535915, y: 0.052743338}
+      - {x: -0.4697999, y: -0.17395845}
+      - {x: -0.33589727, y: -0.3704452}
+      - {x: -0.11786576, y: -0.48300797}
+      - {x: 0.12073563, y: -0.48286706}
+      - {x: 0.3315788, y: -0.37260446}
+      - {x: 0.4641012, y: -0.17469198}
+      - {x: 0.49918026, y: 0.055557713}
+      - {x: 0.32510108, y: 0.50215924}
 --- !u!1 &651421873
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +428,6 @@ GameObject:
   m_Component:
   - component: {fileID: 663495718}
   - component: {fileID: 663495719}
-  - component: {fileID: 663495720}
   - component: {fileID: 663495721}
   m_Layer: 0
   m_Name: Player
@@ -430,44 +468,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Crosshair: {fileID: 1241888970}
   PlayerOptic: {fileID: 348228227}
---- !u!60 &663495720
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663495717}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0.0078125, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.32059783, y: 0.031610385}
-      - {x: 0.013464977, y: 0.50166893}
-      - {x: -0.31810093, y: 0.027315766}
-      - {x: -0.3229418, y: 0.4978407}
-      - {x: -0.49535915, y: 0.052743338}
-      - {x: -0.4697999, y: -0.17395845}
-      - {x: -0.33589727, y: -0.3704452}
-      - {x: -0.11786576, y: -0.48300797}
-      - {x: 0.12073563, y: -0.48286706}
-      - {x: 0.3315788, y: -0.37260446}
-      - {x: 0.4641012, y: -0.17469198}
-      - {x: 0.49918026, y: 0.055557713}
-      - {x: 0.32510108, y: 0.50215924}
 --- !u!50 &663495721
 Rigidbody2D:
   serializedVersion: 4
