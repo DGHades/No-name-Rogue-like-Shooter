@@ -17,19 +17,19 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             gameObject.transform.Translate(Vector3.left * 0.1f);
         }
-        if (Input.GetKey(KeyCode.UpArrow))
+        if (Input.GetKey(KeyCode.W))
         {
             gameObject.transform.Translate(Vector3.up * 0.1f);
         }
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.S))
         {
             gameObject.transform.Translate(Vector3.down * 0.1f);
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             gameObject.transform.Translate(Vector3.right * 0.1f);
         }
