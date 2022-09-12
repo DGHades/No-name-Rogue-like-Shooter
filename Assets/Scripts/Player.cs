@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     public GameObject Crosshair;
     public GameObject PlayerOptic;
+    public float movementSpeed = 0.1f;
 
 
     void Start()
@@ -19,19 +20,19 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            gameObject.transform.Translate(Vector3.left * 0.1f);
+            gameObject.transform.Translate(Vector3.left * movementSpeed);
         }
         if (Input.GetKey(KeyCode.W))
         {
-            gameObject.transform.Translate(Vector3.up * 0.1f);
+            gameObject.transform.Translate(Vector3.up * movementSpeed);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            gameObject.transform.Translate(Vector3.down * 0.1f);
+            gameObject.transform.Translate(Vector3.down * movementSpeed);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            gameObject.transform.Translate(Vector3.right * 0.1f);
+            gameObject.transform.Translate(Vector3.right * movementSpeed);
         }
         MoveCrosshair();
     }
