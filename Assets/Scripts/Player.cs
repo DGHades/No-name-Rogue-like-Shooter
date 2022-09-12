@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     public GameObject Crosshair;
     public GameObject PlayerOptic;
+
+
     void Start()
     {
         Cursor.visible = false;

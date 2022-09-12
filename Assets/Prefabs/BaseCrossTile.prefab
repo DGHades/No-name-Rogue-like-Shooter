@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 3084553691768879318}
   m_Layer: 0
   m_Name: GateBottom
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 4850528820035839490}
   m_Layer: 0
   m_Name: WallBottomRight
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -345,7 +345,7 @@ GameObject:
   - component: {fileID: 6853896487471190366}
   m_Layer: 0
   m_Name: WallThinnerTopLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 5183371609602485903}
   m_Layer: 0
   m_Name: WallTopRight
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 6622878963222086584}
   m_Layer: 0
   m_Name: WallThinnerBottomRight
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 3941686641928272373}
   m_Layer: 0
   m_Name: BorderTop
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -736,7 +736,7 @@ GameObject:
   - component: {fileID: 5997273578265385753}
   m_Layer: 0
   m_Name: BlockingWallTop
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -847,7 +847,7 @@ GameObject:
   - component: {fileID: 924151804534928028}
   m_Layer: 0
   m_Name: GateTop
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -958,7 +958,7 @@ GameObject:
   - component: {fileID: 5529748446942787283}
   m_Layer: 0
   m_Name: BlockingWallBottom
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 5694745367857020514}
   m_Layer: 0
   m_Name: BlockingWallRight
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1180,7 +1180,7 @@ GameObject:
   - component: {fileID: 2206256955578043124}
   m_Layer: 0
   m_Name: GateLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1291,7 +1291,7 @@ GameObject:
   - component: {fileID: 1164163396819839479}
   m_Layer: 0
   m_Name: WallBottomLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1400,7 +1400,6 @@ GameObject:
   - component: {fileID: 1383548967837930453}
   - component: {fileID: 4867023325275792635}
   - component: {fileID: 6491659928807526151}
-  - component: {fileID: 8813858911478324346}
   m_Layer: 0
   m_Name: BaseCrossTile
   m_TagString: Untagged
@@ -1527,39 +1526,6 @@ MonoBehaviour:
   TileBottom: {fileID: 0}
   TileLeft: {fileID: 0}
   TileRight: {fileID: 0}
---- !u!60 &8813858911478324346
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5262444756071325098}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.002393222, y: 0.9956733}
-      - {x: -0.5, y: 0.5}
-      - {x: -1.0082753, y: -0.0015124318}
-      - {x: -0.5, y: -0.5}
-      - {x: 0.002393222, y: -0.9956733}
-      - {x: 0.5, y: -0.5}
-      - {x: 0.9967483, y: -0.0026752949}
-      - {x: 0.5, y: 0.5}
 --- !u!1 &6272403328381454113
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,7 +1539,7 @@ GameObject:
   - component: {fileID: 2701686463879157542}
   m_Layer: 0
   m_Name: BorderBottom
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1683,7 +1649,7 @@ GameObject:
   - component: {fileID: 1216057150070275976}
   m_Layer: 0
   m_Name: WallThinnerBottomLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1768,7 +1734,7 @@ GameObject:
   - component: {fileID: 9073843285226531239}
   m_Layer: 0
   m_Name: GateRight
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1878,7 +1844,7 @@ GameObject:
   - component: {fileID: 1400535948187279398}
   m_Layer: 0
   m_Name: WallThinnerTopRight
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1963,7 +1929,7 @@ GameObject:
   - component: {fileID: 4512306131675896246}
   m_Layer: 0
   m_Name: WallTopLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2074,7 +2040,7 @@ GameObject:
   - component: {fileID: 7465148776536238299}
   m_Layer: 0
   m_Name: BorderLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2185,7 +2151,7 @@ GameObject:
   - component: {fileID: 378241171702476827}
   m_Layer: 0
   m_Name: BlockingWallLeft
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

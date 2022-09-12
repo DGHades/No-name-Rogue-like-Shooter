@@ -199,6 +199,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52581781}
   m_CullTransparentMesh: 1
+--- !u!20 &71088844 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 7725896584005395122, guid: 4d51c6fa92037bd4e934e0c3611f7e30, type: 3}
+  m_PrefabInstance: {fileID: 279809270}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &279809270
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -206,6 +211,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 797367823956587138, guid: 4d51c6fa92037bd4e934e0c3611f7e30, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990063916779883722, guid: 4d51c6fa92037bd4e934e0c3611f7e30, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 71088844}
+    - target: {fileID: 4990063916779883722, guid: 4d51c6fa92037bd4e934e0c3611f7e30, type: 3}
+      propertyPath: BulletSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990063916779883722, guid: 4d51c6fa92037bd4e934e0c3611f7e30, type: 3}
+      propertyPath: shootingSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7725896582105914253, guid: 4d51c6fa92037bd4e934e0c3611f7e30, type: 3}
       propertyPath: m_Name
       value: Player
